@@ -4,7 +4,7 @@ Accept n Numbers from user and display all such elements which are divisible by 
 */
 #include<stdio.h>
 #include<stdlib.h>
-int Display(int Arr[],int iLenght)
+int Display(int Arr[],int iLenght)        //Function print Number Divisiblr by 5
 {
     int i=0;
     for(i=0;i<=iLenght;i++)
@@ -39,7 +39,7 @@ int main()
         printf("Enter Element %d:",iCnt+1);
         scanf("%d",&p[iCnt]);
     }
-    Display(p,iSize);
+    Display(p,iSize);                        //Function Call
     free(p);
 
     return 0;
