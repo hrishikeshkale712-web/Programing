@@ -3,9 +3,9 @@ Accept N number of User and return Difference between Frequency of Even number A
 */
 
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h>                        //Use this Library Dynamic Memory allocation
 
-int Frequency(int Arr[],int iLength)
+int Frequency(int Arr[],int iLength)      //This function are return Count Diff of Freq Even or Odd
 {
     int i = 0;
     int EvenCount = 0;
@@ -49,7 +49,7 @@ int main()
         scanf("%d",&p[iCnt]);
     }
 
-    iRet = Frequency(p,iSize);
+    iRet = Frequency(p,iSize);                //Function Call And Store the Value in iRet
 
     printf("%d",iRet);
 
